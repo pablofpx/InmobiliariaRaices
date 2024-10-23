@@ -1,0 +1,67 @@
+.fotos_propiedades {
+    display: flex;
+    width: 70%;
+    height: 50vh;
+    background-color: lightgray;
+    flex-direction: column;
+    padding-left: 300px;
+    margin-right: 50px;
+}
+
+.fotos_propiedades span {
+    display: flex;
+    font-size: 1.5em;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.fotos_propiedades h2 {
+    font-size: 2.6em;
+}
+
+/*boton para informacion */
+
+#boton_propiedades {
+    display: flex;
+    width: 10%;
+    height: 10%;
+    background-color: rgb(199, 151, 31);
+    justify-content: center;
+    color: white;
+}
+
+/*fotos en carresul que cambian según haces click*/
+#carrusel_propiedades {
+    position: absolute;
+    display: grid;
+    width: 50%;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    left: 30%;
+    top: 28%;
+}
+
+#container_fotos {
+    height: 60%;
+    box-shadow: 5px 5px 20px lightgrey;
+}
+
+#carrusel_propiedades img {
+    width: 100%;
+    height: 60%;
+}
+
+#carrusel_propiedades p {
+    margin: 20px;
+}
+
+/* arreglar boton alquiler */
+#carrusel_propiedades div #boton_alquiler {
+    display: flex;
+    width: 20%;
+    height: 10%;
+    box-shadow: none;
+    background-color: rgb(199, 151, 31);
+    justify-content: center;
+    color: white;
+}
