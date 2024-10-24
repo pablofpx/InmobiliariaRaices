@@ -30,7 +30,7 @@
     color: white;
 }
 
-/*fotos en carresul que cambian según haces click*/
+/*fotos en carrusel que cambian según haces click*/
 #carrusel_propiedades {
     position: absolute;
     display: grid;
@@ -60,8 +60,10 @@
     display: flex;
     width: 20%;
     height: 10%;
+    margin: 10px;
     box-shadow: none;
     background-color: rgb(199, 151, 31);
     justify-content: center;
+    align-items: center;
     color: white;
 }
