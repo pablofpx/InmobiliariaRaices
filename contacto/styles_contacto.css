@@ -1,0 +1,233 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(146, 58, 58);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    z-index: 1000;
+}
+
+.logo img {
+    height: 100px;
+    width: 100px;
+}
+
+menu {
+    margin-left: auto;
+    margin-right: right;
+}
+
+/* Estilo del menú */
+.menu a {
+    text-decoration: none;
+    color: #ffffff;
+    margin-left: 20px;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.menu a:hover {
+    color: #646464;
+}
+
+.idiomas {
+    color: white;
+    margin-right: 50px;
+}
+
+.idiomas a {
+    color: white;
+    text-decoration: none;
+}
+
+/* -----------------main----------------------------- */
+
+.headerImg {
+    margin-top: 120px;
+}
+
+.backgroundHeader {
+    width: 100%;
+    height: 70vh;
+}
+
+.headerImg .textoContact {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 5rem;
+    color: white;
+    text-align: center;
+}
+
+/* contactos*/
+
+.contacts {
+    display: flex;
+    width: 100%;
+    height: 20vh;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.contacts > h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.contact_info {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    height: 30vh;
+    padding: 5rem;
+    justify-items: center;
+    align-items: center;
+    background-color: #e2e2e2;
+}
+
+.contact_info > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact_info div > img {
+    width: 80px;
+    height: 80px;
+}
+
+.contact_form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem;
+}
+
+.contact_form form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contact_form input, .contact_form textarea {
+    width: 600px;
+    height: 2rem;
+    padding: 1rem;
+    margin: 1rem;
+    border: none;
+    border-bottom: 1px solid rgb(146, 58, 58);
+    background-color: inherit;
+    outline: none;
+}
+
+
+.contact_form button {
+    width: 150px;
+    padding: 1rem;
+    background-color: rgb(199, 151, 31);
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    margin-top: 2rem;
+}
+
+.contact_form button:hover {
+    background-color: #e0a800;
+    color: white;
+}
+
+.contact_form input:focus,
+.contact_form textarea:focus {
+    border-bottom: 2px solid rgb(146, 58, 58);
+    background-color: #f4f4f4; 
+}
+
+.contact_form textarea {
+    width: 600px; 
+    height: 6rem; 
+    resize: vertical; 
+}
+
+
+
+/* main footer */
+.footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    height: 30vh;
+    padding: 8rem;
+    border: 2px solid red;
+}
+
+.footer>div {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+#logo {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    border-right: 1px solid #ccc;
+}
+
+#logo img {
+    width: 200px;
+}
+
+/*contactos */
+
+#contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-right: 1px solid #ccc;
+}
+
+/* newsletter*/
+
+#newsletter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#newsletter form {
+    position: relative;
+}
+
+#newsletter button {
+    position: absolute;
+    top: 5px;
+    right: -30px;
+    background-color: rgb(199, 151, 31);
+    color: white;
+    padding: 0.8rem;
+    border: none;
+    cursor: pointer;
+}
+
+#newsletter button:hover {
+    background-color: #e0a800;
+    color: white;
+}
+
+#newsletter input {
+    width: 100%;
+    padding: 1rem;
+}
