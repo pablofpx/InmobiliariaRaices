@@ -1,0 +1,259 @@
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(146, 58, 58);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    z-index: 1000;
+}
+
+.logo img {
+    height: 100px;
+    width: 100px;
+}
+
+menu {
+    margin-left: auto;
+    margin-right: right;
+}
+
+#logo {
+    display: flex;
+    justify-content: center;
+    align-items:start;
+    border-right: 1px solid #ccc;
+}
+
+#logo img {
+    width: 200px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #ffffff;
+    margin-left: 20px;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.menu a:hover {
+    color: #646464;
+}
+
+.idiomas {
+    color: white;
+    margin-right: 50px;
+}
+
+.idiomas a {
+    color: white;
+    text-decoration: none;
+}
+
+
+
+/* About Section */
+
+.imageprincipal_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.image_container{
+    position: relative;
+}
+
+.btnContact{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    z-index: 1;
+    top: 50%;
+    right: 1%;
+    color: white;
+    font-size: 5rem;
+}
+
+.btnContact:hover{
+    color:#8A283F;
+}
+
+.principal{
+    margin-top: 104px;
+    width: 99vw;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+    filter: brightness(0.75);
+}
+
+
+.bienvenida_container_padre{
+    margin-top: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.bienvenida_container{
+    width: 80%;
+    border-top: 2px solid #000000;
+    border-bottom: 2px solid #000000;
+    padding: 20px;
+}
+
+.bienvenida_container > span {
+    font-family: "EB Garamond", serif;}
+
+.info_container_padre{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    margin-left: 150px;
+}
+
+.info_container{
+    display: flex;
+    justify-content: center;
+    border: 10px solid rgb(146, 58, 58);
+}
+
+.imageinfo{
+    width: 400px;
+    height: 500px;
+}
+
+span {
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+.span > span{
+    font-size: 1.2rem;
+    color: rgb(146, 58, 58);
+}
+
+.span2 > span{
+    font-size: 1.2rem;
+    color: rgb(146, 58, 58);
+}
+
+.span2{
+    padding: 12rem;
+    text-align: justify;
+}
+
+.span{
+    padding: 12rem;
+    text-align: justify;
+}
+
+.info_presentacion{
+    border-bottom: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 40px;
+    color: #000000;
+}
+
+.info2_container_padre{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row-reverse;
+    margin-right: 150px;
+}
+
+.info2_presentacion{
+    border-bottom: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 40px;
+    color: #000000;
+}
+
+.info2_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 10px solid rgb(146, 58, 58);
+}
+
+a{
+    text-decoration: none;
+    color:#000000
+}
+
+/* footer */
+.footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    height: 30vh;
+    padding: 8rem;
+    border: 2px solid red;
+}
+
+.footer > div {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+#contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-right: 1px solid #ccc;
+}
+
+
+#newsletter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#newsletter form {
+    position: relative;
+}
+
+#newsletter button {
+    position: absolute;
+    top: 5px;
+    right: -30px;
+    background-color: rgb(199, 151, 31);
+    color: white;
+    padding: 0.8rem;
+    border: none;
+    cursor: pointer;
+}
+
+#newsletter button:hover {
+    background-color:#e0a800;
+    color: white;
+}
+
+#newsletter input {
+    width: 100%;
+    padding: 1rem;
+}
+
