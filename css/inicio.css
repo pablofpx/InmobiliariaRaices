@@ -1,0 +1,306 @@
+*{
+    margin: 0;
+    padding: 0%;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* barra fija de navegación */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(146, 58, 58);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    z-index: 1000;
+}
+
+.logo img {
+    height: 100px;
+    width: 100px;
+}
+
+menu {
+    margin-left: auto;
+    margin-right: right;
+}
+
+/* Estilo del menú */
+.menu a {
+    text-decoration: none;
+    color: #ffffff;
+    margin-left: 20px;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.menu a:hover {
+    color: #646464;
+}
+
+.idiomas {
+    color: white;
+    margin-right: 50px;
+}
+
+.idiomas a {
+    color: white;
+    text-decoration: none;
+}
+
+/* -----------------main----------------------------- */
+
+.main_foto {
+    height: 60vh;
+    margin-top: 120px;
+    border: 2px solid black;
+}
+
+.main_foto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.main_foto > h1 {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 3rem;
+}
+
+/* carrusel de propiedades */
+.fotos_propiedades {
+    display: flex;
+    height: 50vh;
+    background-color: #e2e2e2;
+    flex-direction: column;
+    padding-left: 300px;
+    margin-right: 150px;
+    margin-top: 200px;
+}
+
+.fotos_propiedades span {
+    display: flex;
+    font-size: 1.5em;
+    margin-top: 30px;
+    font-weight: bold;
+}
+
+.fotos_propiedades h2 {
+    font-size: 2.6em;
+}
+
+/*boton para informacion */
+
+#boton_propiedades {
+    display: flex;
+    width: 10%;
+    height: 10%;
+    background-color: rgb(199, 151, 31);
+    justify-content: center;
+    border-radius: 0.5rem;
+    color: white;
+    font-size: 1rem;
+}
+
+.carrusel_container {
+    display: flex;
+    justify-content: end;
+    margin-right: 150px;
+}
+
+/*fotos en carrusel que cambian según haces click*/
+#carrusel_propiedades {
+    position: relative;
+    bottom: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    gap: 20px;
+}
+
+#container_fotos {
+    box-shadow: 5px 5px 20px lightgrey;
+}
+
+#carrusel_propiedades img {
+    width: 450px;
+    height: 300px;
+}
+
+#carrusel_propiedades p {
+    margin: 20px;
+}
+
+/* arreglar boton alquiler */
+#boton_alquiler {
+    display: flex;
+    left: 70%;
+    width: 120px;
+    height: 50px;
+    margin: 10px;
+    box-shadow: none;
+    background-color: rgb(199, 151, 31);
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.5rem;
+    color: white;
+    text-decoration: none;
+}
+
+/* -----------------segunda parte, ventas ----------------------------- */
+
+.fotos_propiedades_venta {
+    display: flex;
+    height: 50vh;
+    background-color: #e2e2e2;
+    flex-direction: column;
+    padding-left: 300px;
+    margin-right: 150px;
+}
+
+.fotos_propiedades_venta span {
+    display: flex;
+    font-size: 1.5rem;
+    margin-top: 30px;
+    font-weight: bold;
+}
+
+.fotos_propiedades_venta h2 {
+    font-size: 2.6rem;
+}
+
+
+#boton_propiedades_venta {
+    display: flex;
+    width: 10%;
+    height: 10%;
+    background-color: rgb(199, 79, 31);
+    justify-content: center;
+    border-radius: 0.5rem;
+    color: white;
+    font-size: 1rem;
+}
+
+/* carrusel container ventas*/
+
+.carrusel_container_venta {
+    display: flex;
+    justify-content: end;
+    margin-right: 150px;
+}
+
+#carrusel_propiedades_venta {
+    position: relative;
+    bottom: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    gap: 20px;
+}
+
+#container_fotos_venta {
+    box-shadow: 5px 5px 20px lightgrey;
+}
+
+#carrusel_propiedades_venta img {
+    width: 450px;
+    height: 300px;
+}
+
+#carrusel_propiedades_venta p {
+    margin: 20px;
+}
+
+#boton_alquiler_venta {
+    display: flex;
+    left: 70%;
+    width: 120px;
+    height: 50px;
+    margin: 10px;
+    box-shadow: none;
+    background-color: rgb(199, 79, 31);
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.5rem;
+    color: white;
+    text-decoration: none;
+}
+/* main footer */
+.footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    height: 30vh;
+    padding: 8rem;
+    border: 2px solid red;
+}
+
+.footer > div {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* logo */
+
+#logo {
+    display: flex;
+    justify-content: center;
+    align-items:start;
+    border-right: 1px solid #ccc;
+}
+
+#logo img {
+    width: 200px;
+}
+
+/*contactos */	
+
+#contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-right: 1px solid #ccc;
+}
+
+/* newsletter*/ 
+
+#newsletter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#newsletter form {
+    position: relative;
+}
+
+#newsletter button {
+    position: absolute;
+    top: 5px;
+    right: -30px;
+    background-color: rgb(199, 151, 31);
+    color: white;
+    padding: 0.8rem;
+    border: none;
+    cursor: pointer;
+}
+
+#newsletter button:hover {
+    background-color:#e0a800;
+    color: white;
+}
+
+#newsletter input {
+    width: 100%;
+    padding: 1rem;
+}

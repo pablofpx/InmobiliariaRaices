@@ -1,0 +1,284 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+header {
+    color: white;
+    padding: 20px;
+}
+
+h1 {
+    margin: 0;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(146, 58, 58);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    z-index: 1000;
+}
+
+.logo img {
+    height: 100px;
+    width: 100px;
+}
+
+menu {
+    margin-left: auto;
+    margin-right: right;
+}
+
+/* Estilo del menú */
+.menu a {
+    text-decoration: none;
+    color: #ffffff;
+    margin-left: 20px;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.menu a:hover {
+    color: #646464;
+}
+
+.idiomas {
+    color: white;
+    margin-right: 50px;
+}
+
+.idiomas a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Carrusel */
+.carousel {
+    position: relative;
+    width: 80%;
+    margin: 30px auto;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 100px;
+}
+
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 40%; /* Se ajusta según la cantidad de imágenes */
+}
+
+.carousel img {
+    width: 100%;
+    flex-shrink: 0;
+}
+
+.carousel-buttons {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.carousel-buttons button {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.carousel-buttons button:hover {
+    background-color: #0055aa;
+}
+
+/* Sección de promociones */
+.promociones {
+    padding: 20px;
+    text-align: center;
+}
+
+.promocion {
+    background: white;
+    margin: 15px;
+    display: inline-block;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.promocion img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.promocion h3 {
+    margin: 15px;
+    color: #003366;
+}
+
+.promocion p {
+    padding: 0 15px;
+    color: #555;
+}
+
+
+.busqueda-promociones {
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+}
+
+.busqueda-promociones h2 {
+    margin-bottom: 15px;
+    font-size: 1.8em;
+    color: #3e3a61;
+    text-align: center;
+    font-weight: 600;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 10px;
+}
+
+.form-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.form-row label {
+    flex: 1 1 150px;
+    font-size: 0.9em;
+    font-weight: 600;
+    color: #333333;
+    margin: auto 0;
+}
+
+.form-row input,
+.form-row select {
+    flex: 2 1 250px;
+    padding: 10px;
+    border: 1px solid #d1d1d1;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    font-size: 0.9em;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-row input:focus,
+.form-row select:focus {
+    border-color: #3e3a61;
+    box-shadow: 0 0 5px rgba(62, 58, 97, 0.4);
+    outline: none;
+}
+
+.buscar-btn {
+    display: block;
+    width: 100%;
+    max-width: 200px;
+    margin: 20px auto 0;
+    background-color: rgb(199,151,31);
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1em;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.buscar-btn:hover {
+    background-color: #e0a800;
+    transform: translateY(-2px);
+}
+
+.buscar-btn:active {
+    transform: translateY(0);
+}
+
+/* main footer */
+.footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    height: 30vh;
+    padding: 8rem;
+    border: 2px solid red;
+}
+
+.footer > div {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* logo */
+
+#logo {
+    display: flex;
+    justify-content: center;
+    align-items:start;
+    border-right: 1px solid #ccc;
+}
+
+#logo img {
+    width: 200px;
+}
+
+/*contactos */	
+
+#contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-right: 1px solid #ccc;
+}
+
+/* newsletter*/ 
+
+#newsletter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#newsletter form {
+    position: relative;
+}
+
+#newsletter button {
+    position: absolute;
+    top: 5px;
+    right: -30px;
+    background-color: rgb(199, 151, 31);
+    color: white;
+    padding: 0.8rem;
+    border: none;
+    cursor: pointer;
+}
+
+#newsletter button:hover {
+    background-color:#e0a800;
+    color: white;
+}
+
+#newsletter input {
+    width: 100%;
+    padding: 1rem;
+}

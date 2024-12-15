@@ -1,0 +1,123 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(146, 58, 58);
+    }
+  
+  /* Estilos para la barra de navegación */
+  .navbar {
+    position: fixed; /* La barra de navegación queda fija */
+    top: 0; /* Se adhiere a la parte superior */
+    left: 0;
+    width: 100%; /* Ocupa todo el ancho */
+    background-color: rgb(146, 58, 58); /* Fondo blanco */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px; /* Espaciado */
+    z-index: 1000; /* Asegura que esté sobre otros elementos */
+  }
+  
+  /* Estilo del logo */
+  .logo img {
+    height: 100px; /* Ajusta según tu logo */
+    width: 100px;
+  }
+
+  menu{
+    margin-left: auto;
+    margin-right: right;
+  }
+  
+  /* Estilo del menú */
+  .menu a {
+    text-decoration: none;
+    color: #ffffff; /* Color del texto */
+    margin-left: 20px;
+    font-size: 16px;
+    transition: color 0.3s ease; /* Efecto al pasar el mouse */
+  }
+  
+  .menu a:hover {
+    color: #646464; /* Color al pasar el mouse */
+  }
+  
+  /* Contenido principal */
+  .content {
+    margin-top: 70px; /* Desplaza el contenido hacia abajo para evitar que la barra lo tape */
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+
+  .idiomas{
+    color: white;
+    margin-right: 20px;
+  }
+
+  .idiomas a{
+    color: white;
+    text-decoration: none;
+  }
+
+  .headerImg{
+    position: relative;
+    margin-top: 123px;
+  }
+
+  .backgroundHeader{
+    width: 100%;
+    height: 800px;
+  } 
+
+  .headerImg .textoContact{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 78px;
+    color: white;
+    text-align: center;
+  }
+
+  .txtContactos{
+    margin-top: 50px;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .txtContactos p{
+    color: white;
+    font-size: 50px;
+  }
+
+  .comoContactar{
+    border: 2px black solid;
+    margin-top: 150px;
+    width: 100%;
+    height: 500px;
+  }
+
+  .iconos{
+    width: 50%;
+    margin-left: 300px;
+    margin-right: auto;
+  }
+
+  .iconos img{
+    width: 800px;
+  }
+
+  .iconos .texto{
+    
+  }

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promociones</title>
+    <link rel="stylesheet" href="promociones.css">
+    <script src="promociones.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Raíces Gallegas</h1>
+    </header>
+
+    <nav class="navbar">
+        <div class="logo">
+            <a href="inicio.html"><img src="img/Logo.png" width="200px" height="200px" alt="Logo"></a>
+        </div>
+        <div class="menu">
+            <a href="inmuebles.html" class="op1">Inmuebles</a>
+            <a href="promociones.html" class="op2">Promociones</a>
+            <a href="" class="op3">Empresa</a>
+            <a href="" class="op4">Generali Seguros</a>
+            <a href="contacto.html" class="op4">Contacto</a>
+        </div>
+        <div class="idiomas">
+            <a href="">ES |</a>
+            <a href="">EN</a>
+        </div>
+    </nav>
+
+    <div class="carousel">
+        <div class="carousel-images">
+            <img src="img/pexels-alex-qian-1180283-2343465.jpg" alt="Imagen 1">
+            <img src="img/pexels-curtis-adams-1694007-3288103.jpg" alt="Imagen 2">
+            <img src="img/pexels-marketingtuig-87223.jpg" alt="Imagen 3">
+
+
+        </div>
+        <div class="carousel-buttons">
+            <button id="prev">&#9664;</button>
+            <button id="next">&#9654;</button>
+        </div>
+    </div>
+
+    <section class="busqueda-promociones">
+        <h2>Búsqueda de Promociones</h2>
+        <form action="#" method="GET">
+            <div class="form-row">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Nombre">
+
+                <label for="provincia">Provincia</label>
+                <select id="provincia" name="provincia">
+                    <option value="">Selecciona provincia</option>
+                </select>
+
+                <label for="municipio">Municipio</label>
+                <select id="municipio" name="municipio">
+                    <option value="">Selecciona municipio</option>
+                </select>
+
+                <label for="poblacion">Población/Barrio</label>
+                <select id="poblacion" name="poblacion">
+                    <option value="">Selecciona barrio</option>
+                </select>
+            </div>
+
+            <div class="form-row">
+                <label for="zona">Zona</label>
+                <select id="zona" name="zona">
+                    <option value="">Selecciona zona</option>
+                </select>
+
+                <label for="estado">Estado/Conservación</label>
+                <select id="estado" name="estado">
+                    <option value="">Selecciona estado</option>
+                </select>
+
+                <label for="habitacion-min">Habitación</label>
+                <input type="number" id="habitacion-min" name="habitacion-min" placeholder="Mínimo">
+
+                <label for="habitacion-max">Habitación</label>
+                <input type="number" id="habitacion-max" name="habitacion-max" placeholder="Máximo">
+            </div>
+
+            <button type="submit" class="buscar-btn">Buscar</button>
+        </form>
+    </section>
+
+    <section class="promociones">
+        <h2>Promociones destacadas</h2>
+        <div class="promocion">
+            <img src="img/piscina.jpg" alt="Villa con piscina">
+            <h3>Villa con piscina en la costa</h3>
+            <p>Disfruta de esta espectacular villa con vistas al mar, 4 habitaciones, jardín privado y piscina. Perfecta
+                para escapadas familiares.</p>
+        </div>
+        <div class="promocion">
+            <img src="img/apartamento.jpg" alt="Apartamento en el centro">
+            <h3>Apartamento moderno en el centro</h3>
+            <p>Este elegante apartamento de 2 habitaciones está ubicado en el corazón de la ciudad, cerca de tiendas y
+                restaurantes.</p>
+        </div>
+        <div class="promocion">
+            <img src="img/montaña.jpg" alt="Casa rural en las montañas">
+            <h3>Casa rural en las montañas</h3>
+            <p>Escápate al campo con esta encantadora casa de piedra, ideal para amantes de la naturaleza. Con chimenea
+                y terraza.</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer">
+            <div id="logo">
+                <img src="img/foto2.jpg" alt="Logo">
+            </div>
+            <div id="contacts">
+                <h1>Contactos</h1>
+                <p>Correo: inmo@inmo.com</p>
+                <p>Teléfono: 987 25 81 76</p>
+            </div>
+            <div id="newsletter">
+                <h2>Suscríbete a nuestro boletín</h2>
+                <form action="newsletter.php" method="post">
+                    <input type="email" name="email" id="email" placeholder="Correo electrónico">
+                    <button type="submit">Suscribirse</button>
+                </form>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
