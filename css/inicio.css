@@ -23,8 +23,11 @@ body{
 }
 
 .logo img {
-    height: 100px;
-    width: 100px;
+    margin-top: 10px;
+    height: 80px;
+    width: 80px;
+    margin-bottom: 10px;
+    margin-left: 10px;
 }
 
 menu {
@@ -58,9 +61,13 @@ menu {
 /* -----------------main----------------------------- */
 
 .main_foto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 60vh;
     margin-top: 120px;
-    border: 2px solid black;
+    /*border: 2px solid black;*/
+
 }
 
 .main_foto img {
@@ -69,13 +76,20 @@ menu {
     object-fit: cover;
 }
 
-.main_foto > h1 {
+.main_foto > div{
     position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
     color: white;
-    font-size: 3rem;
+    font-size: 1.6rem;
+    background-color: #646464;
+    background: rgba(100, 100, 100, 0.6);
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.main_foto div > h1 {
+    opacity: 100%;
 }
 
 /* carrusel de propiedades */
@@ -84,10 +98,24 @@ menu {
     height: 50vh;
     background-color: #e2e2e2;
     flex-direction: column;
-    padding-left: 300px;
-    margin-right: 150px;
+    padding-left: 200px;
+    margin-right: 250px;
     margin-top: 200px;
+
+    transform: translateX(0%); /* Start off-screen to the right */
+    opacity: 0;
+    transition: transform 2s ease-out, opacity 2s ease-out; /* Smooth slide-in */
 }
+
+.fotos_container.visible {
+    transform: translateX(100%); /* Slide into view */
+    opacity: 1;
+  }
+  
+  .fotos_container.hidden {
+    visibility: hidden;
+  }
+
 
 .fotos_propiedades span {
     display: flex;
@@ -97,6 +125,8 @@ menu {
 }
 
 .fotos_propiedades h2 {
+    margin-top: 3px;
+    margin-bottom: 12px;
     font-size: 2.6em;
 }
 
@@ -108,6 +138,7 @@ menu {
     height: 10%;
     background-color: rgb(199, 151, 31);
     justify-content: center;
+    align-items: center;
     border-radius: 0.5rem;
     color: white;
     font-size: 1rem;
@@ -117,7 +148,20 @@ menu {
     display: flex;
     justify-content: end;
     margin-right: 150px;
+
+    transform: translateX(100%); /* Start off-screen to the right */
+    opacity: 0;
+    transition: transform 2s ease-out, opacity 2s ease-out; /* Smooth slide-in */
 }
+
+.carrusel_container.visible {
+    transform: translateX(0); /* Slide into view */
+    opacity: 1;
+  }
+  
+  .carrusel_container.hidden {
+    visibility: hidden;
+  }
 
 /*fotos en carrusel que cambian según haces click*/
 #carrusel_propiedades {
@@ -131,6 +175,9 @@ menu {
 
 #container_fotos {
     box-shadow: 5px 5px 20px lightgrey;
+
+    position: relative;
+    left: 0px;
 }
 
 #carrusel_propiedades img {
@@ -159,17 +206,28 @@ menu {
 }
 
 /* -----------------segunda parte, ventas ----------------------------- */
+.test{
+    display: flex;
+    width: 100%;
+    flex-direction: row-reverse;
+    text-align: right;
+}
+
 
 .fotos_propiedades_venta {
     display: flex;
     height: 50vh;
     background-color: #e2e2e2;
     flex-direction: column;
-    padding-left: 300px;
-    margin-right: 150px;
+    align-items: end;
+    padding-right: 200px;
+    width: 100%;
+    
+    margin-left: 250px;
 }
 
 .fotos_propiedades_venta span {
+    width: auto;
     display: flex;
     font-size: 1.5rem;
     margin-top: 30px;
@@ -177,6 +235,8 @@ menu {
 }
 
 .fotos_propiedades_venta h2 {
+    margin-top: 3px;
+    margin-bottom: 12px;
     font-size: 2.6rem;
 }
 
@@ -185,8 +245,9 @@ menu {
     display: flex;
     width: 10%;
     height: 10%;
-    background-color: rgb(199, 79, 31);
+    background-color: rgb(39, 97, 122);
     justify-content: center;
+    align-items: center;
     border-radius: 0.5rem;
     color: white;
     font-size: 1rem;
@@ -196,8 +257,9 @@ menu {
 
 .carrusel_container_venta {
     display: flex;
-    justify-content: end;
-    margin-right: 150px;
+    justify-content: start;
+    margin-left: 150px;
+
 }
 
 #carrusel_propiedades_venta {
@@ -229,7 +291,7 @@ menu {
     height: 50px;
     margin: 10px;
     box-shadow: none;
-    background-color: rgb(199, 79, 31);
+    background-color: rgb(39, 97, 122);
     justify-content: center;
     align-items: center;
     border-radius: 0.5rem;
@@ -242,7 +304,7 @@ menu {
     grid-template-columns: repeat(3, 1fr);
     height: 30vh;
     padding: 8rem;
-    border: 2px solid red;
+    border-top: 2px solid rgb(146, 58, 58);
 }
 
 .footer > div {
@@ -275,6 +337,7 @@ menu {
 /* newsletter*/ 
 
 #newsletter {
+    text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -282,6 +345,8 @@ menu {
 
 #newsletter form {
     position: relative;
+    margin-top: 1em;
+    margin-right: 1.5em;
 }
 
 #newsletter button {
