@@ -1,17 +1,17 @@
 .fotos_propiedades {
     display: flex;
-    width: 70%;
+    border: 2px solid black;
     height: 50vh;
-    background-color: lightgray;
+    background-color: #e2e2e2;
     flex-direction: column;
     padding-left: 300px;
-    margin-right: 50px;
+    margin-right: 150px;
 }
 
 .fotos_propiedades span {
     display: flex;
     font-size: 1.5em;
-    margin-top: 20px;
+    margin-top: 30px;
     font-weight: bold;
 }
 
@@ -27,28 +27,37 @@
     height: 10%;
     background-color: rgb(199, 151, 31);
     justify-content: center;
+    border-radius: 0.5rem;
     color: white;
+    font-size: 1rem;
+}
+
+.carrusel_container {
+    border: 2px solid black;
+    display: flex;
+    justify-content: end;
+    margin-right: 150px;
 }
 
 /*fotos en carrusel que cambian según haces click*/
 #carrusel_propiedades {
-    position: absolute;
-    display: grid;
-    width: 50%;
-    grid-template-columns: 1fr 1fr;
+    position: relative;
+    bottom: 150px;
+    display: flex;
+    border: 2px solid red;
+    flex-direction: row;
+    justify-content: end;
     gap: 20px;
-    left: 30%;
-    top: 28%;
 }
 
 #container_fotos {
-    height: 60%;
     box-shadow: 5px 5px 20px lightgrey;
+    border: 2px solid green;
 }
 
 #carrusel_propiedades img {
-    width: 100%;
-    height: 60%;
+    width: 450px;
+    height: 300px;
 }
 
 #carrusel_propiedades p {
@@ -56,14 +65,100 @@
 }
 
 /* arreglar boton alquiler */
-#carrusel_propiedades div #boton_alquiler {
+#boton_alquiler {
     display: flex;
-    width: 20%;
-    height: 10%;
+    left: 70%;
+    width: 120px;
+    height: 50px;
     margin: 10px;
     box-shadow: none;
     background-color: rgb(199, 151, 31);
     justify-content: center;
     align-items: center;
+    border-radius: 0.5rem;
     color: white;
+    text-decoration: none;
+}
+
+/* -----------------segunda parte, ventas ----------------------------- */
+
+.fotos_propiedades_venta {
+    display: flex;
+    border: 2px solid black;
+    height: 50vh;
+    background-color: #e2e2e2;
+    flex-direction: column;
+    padding-left: 300px;
+    margin-right: 150px;
+}
+
+.fotos_propiedades_venta span {
+    display: flex;
+    font-size: 1.5rem;
+    margin-top: 30px;
+    font-weight: bold;
+}
+
+.fotos_propiedades_venta h2 {
+    font-size: 2.6rem;
+}
+
+
+#boton_propiedades_venta {
+    display: flex;
+    width: 10%;
+    height: 10%;
+    background-color: rgb(199, 79, 31);
+    justify-content: center;
+    border-radius: 0.5rem;
+    color: white;
+    font-size: 1rem;
+}
+
+/* carrusel container ventas*/
+
+.carrusel_container_venta {
+    border: 2px solid black;
+    display: flex;
+    justify-content: end;
+    margin-right: 150px;
+}
+
+#carrusel_propiedades_venta {
+    position: relative;
+    bottom: 150px;
+    display: flex;
+    border: 2px solid red;
+    flex-direction: row;
+    justify-content: end;
+    gap: 20px;
+}
+
+#container_fotos_venta {
+    box-shadow: 5px 5px 20px lightgrey;
+    border: 2px solid green;
+}
+
+#carrusel_propiedades_venta img {
+    width: 450px;
+    height: 300px;
+}
+
+#carrusel_propiedades_venta p {
+    margin: 20px;
+}
+
+#boton_alquiler_venta {
+    display: flex;
+    left: 70%;
+    width: 120px;
+    height: 50px;
+    margin: 10px;
+    box-shadow: none;
+    background-color: rgb(199, 79, 31);
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.5rem;
+    color: white;
+    text-decoration: none;
 }

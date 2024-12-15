@@ -1,0 +1,135 @@
+.filtros_contenedor {
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.filtros {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    align-items: center;
+}
+
+.filtro {
+    flex: 1 1 150px;
+    display: flex;
+    flex-direction: column;
+}
+
+.filtro label {
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.filtro select, .filtro input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 0.9rem;
+}
+
+.boton_buscar {
+    flex: 1 1 150px;
+    display: flex;
+    align-items: flex-end;
+    margin-left: 50px;
+}
+
+.boton_buscar button {
+    background-color: rgb(199, 151, 31);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.boton_buscar button:hover {
+    background-color: #e0a800;
+}
+
+/* lista de propiedades */
+
+.propiedades_contenedor {
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.propiedades_contenedor h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.grid_propiedades {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.propiedad {
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #fff;
+    transition: transform 0.2s;
+}
+
+.propiedad:hover {
+    transform: translateY(-5px);
+}
+
+.imagen_propiedad img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.detalles_propiedad {
+    padding: 15px;
+    text-align: left;
+}
+
+.referencia {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.descripcion {
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.iconos {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8rem;
+    margin-bottom: 10px;
+    color: #888;
+}
+
+.boton_info {
+    display: inline-block;
+    background-color: rgb(199, 151, 31);
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 0.9rem;
+    transition: background-color 0.3s;
+}
+
+.boton_info:hover {
+    background-color: #e0a800;
+}
