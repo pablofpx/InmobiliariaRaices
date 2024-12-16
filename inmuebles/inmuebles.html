@@ -5,12 +5,11 @@
     <meta charset="UTF-8">
     <title>Inmuebles</title>
     <link rel="stylesheet" href="styles_inmuebles.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/header.css">
 </head>
 
 <body>
-    <header>
-        <div></div>
-    </header>
     <nav class="navbar">
         <div class="logo">
             <a href="/index/index.html"><img src="/img/Logo.png" width="200px" height="200px" alt="Logo"></a>
@@ -201,21 +200,44 @@
     </main>
     <footer>
         <div class="footer">
-            <div id="logo">
-                <img src="/img/Logo.png" alt="Logo">
+            <div class="footer_elementos">
+                <div id="logo">
+                    <img src="/img/Logo.png" alt="Logo">
+                </div>
+                <div id="contacts">
+                    <h2>Contactos</h2>
+                    <div id="contacts_body">
+                        <div>
+                            <img src="/img/icons8-location-64.png" alt="location" id="loc">
+                            <p>Rúa Sinfónica de Galicia, 10-24, 15004 A Coruña</p>
+                        </div>
+                        <div>
+                            <img src="/img/icons8-mail-96.png" alt="location" id="loc">
+                            <p>Correo: inmo@inmo.com</p>
+                        </div>
+                        <div>
+
+                            <img src="/img/icons8-phone-number-90.png" alt="location" id="loc">
+                            <p>Teléfono: 987 25 81 76</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div id="newsletter">
+                    <h2>Suscríbete a nuestro boletín</h2>
+                    <form action="newsletter.php" method="post">
+                        <input type="email" name="email" id="email" placeholder="Correo electrónico">
+                        <button type="submit">Suscribirse</button>
+                    </form>
+                </div>
+
+
+
             </div>
-            <div id="contacts">
-                <h1>Contactos</h1>
-                <p>Correo: inmo@inmo.com</p>
-                <p>Teléfono: 987 25 81 76</p>
+            <div id="footer_avisos">
+                Aviso Legal    |    Política de privacidad    |    Gestionar datos
             </div>
-            <div id="newsletter">
-                <h2>Suscríbete a nuestro boletín</h2>
-                <form action="newsletter.php" method="post">
-                    <input type="email" name="email" id="email" placeholder="Correo electrónico">
-                    <button type="submit">Suscribirse</button>
-                </form>
-            </div>
+
         </div>
     </footer>
 </body>

@@ -1,0 +1,353 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0%;
+}
+
+body {
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+
+/* -----------------main----------------------------- */
+
+.main_foto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    margin-top: 120px;
+
+}
+
+.main_foto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.main_foto>div {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    color: white;
+    font-size: 1.6rem;
+    background-color: #646464;
+    background: rgba(100, 100, 100, 0.6);
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.main_foto div>h1 {
+    opacity: 100%;
+}
+
+#slogan{
+    text-align: center;
+    position: relative;
+    top: 3em;
+    color: #444242;
+}
+
+#slogan>h2>span{
+    font-family: "Poppins", serif;
+    font-size: smaller;
+}
+
+/* carrusel de propiedades */
+.fotos_propiedades {
+    display: flex;
+    height: 50vh;
+    background-color: #e2e2e2;
+    flex-direction: column;
+    padding-left: 200px;
+    margin-right: 250px;
+    margin-top: 200px;
+
+    transform: translateX(-50%);
+    /* Start off-screen to the right */
+    opacity: 0;
+    transition: transform 2s ease-in, opacity 2s ease-in;
+    /* Smooth slide-in */
+}
+
+.fotos_propiedades.visible {
+    transform: translateX(0%);
+    /* Slide into view */
+    opacity: 1;
+}
+
+.fotos_propiedades.hidden {
+    visibility: hidden;
+}
+
+
+.fotos_propiedades span {
+    display: flex;
+    font-size: 1.5em;
+    margin-top: 30px;
+    font-weight: bold;
+}
+
+.fotos_propiedades h2 {
+    margin-top: 3px;
+    margin-bottom: 12px;
+    font-size: 2.6em;
+}
+
+/*boton para informacion */
+
+#boton_propiedades {
+    display: flex;
+    width: 10%;
+    height: 10%;
+    background-color: rgb(199, 151, 31);
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.5rem;
+    color: white;
+    font-size: 1rem;
+}
+
+.carrusel_container {
+    display: flex;
+    justify-content: end;
+    margin-right: 150px;
+
+    transform: translateX(50%);
+    /* Start off-screen to the right */
+    opacity: 0;
+    transition: transform 1.5s ease-out, opacity 1.5s ease-out;
+    /* Smooth slide-in */
+}
+
+.carrusel_container.visible {
+    transform: translateX(0);
+    /* Slide into view */
+    opacity: 1;
+}
+
+.carrusel_container.hidden {
+    visibility: hidden;
+}
+
+/*fotos en carrusel que cambian según haces click*/
+#carrusel_propiedades {
+    position: relative;
+    bottom: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    gap: 20px;
+}
+
+#container_fotos {
+    box-shadow: 5px 5px 20px lightgrey;
+
+    position: relative;
+    left: 0px;
+}
+
+#carrusel_propiedades img {
+    width: 450px;
+    height: 300px;
+}
+
+#carrusel_propiedades p {
+    margin: 20px;
+}
+
+/* arreglar boton alquiler */
+#boton_alquiler {
+    display: flex;
+    left: 70%;
+    width: 120px;
+    height: 50px;
+    margin: 10px;
+    box-shadow: none;
+    background-color: rgb(199, 151, 31);
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.5rem;
+    color: white;
+    text-decoration: none;
+}
+
+/* -----------------segunda parte, ventas ----------------------------- */
+.fotos_propiedades_venta_container {
+    display: flex;
+    width: 100%;
+    flex-direction: row-reverse;
+    text-align: right;
+
+}
+
+.fotos_propiedades_venta.visible {
+    transform: translateX(0%);
+    /* Slide into view */
+    opacity: 1;
+}
+
+.fotos_propiedades_venta.hidden {
+    visibility: hidden;
+}
+
+.fotos_propiedades_venta {
+    display: flex;
+    height: 50vh;
+    background-color: #e2e2e2;
+    flex-direction: column;
+    align-items: end;
+    padding-right: 200px;
+    width: 100%;
+
+    margin-left: 250px;
+    transform: translateX(50%);
+    /* Start off-screen to the right */
+    opacity: 0;
+    transition: transform 2s ease-in, opacity 2s ease-in;
+    /* Smooth slide-in */
+}
+
+.fotos_propiedades_venta span {
+    width: auto;
+    display: flex;
+    font-size: 1.5rem;
+    margin-top: 30px;
+    font-weight: bold;
+}
+
+.fotos_propiedades_venta h2 {
+    margin-top: 3px;
+    margin-bottom: 12px;
+    font-size: 2.6rem;
+}
+
+
+#boton_propiedades_venta {
+    display: flex;
+    width: 10%;
+    height: 10%;
+    background-color: rgb(39, 97, 122);
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.5rem;
+    color: white;
+    font-size: 1rem;
+}
+
+/* carrusel container ventas*/
+
+.carrusel_container_venta {
+    display: flex;
+    justify-content: start;
+    margin-left: 150px;
+
+    transform: translateX(-50%);
+    /* Start off-screen to the right */
+    opacity: 0;
+    transition: transform 1.5s ease-in, opacity 1.5s ease-in;
+    /* Smooth slide-in */
+}
+
+.carrusel_container_venta.visible {
+    transform: translateX(0);
+    /* Slide into view */
+    opacity: 1;
+}
+
+.carrusel_container_venta.hidden {
+    visibility: hidden;
+}
+
+#carrusel_propiedades_venta {
+    position: relative;
+    bottom: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    gap: 20px;
+}
+
+#container_fotos_venta {
+    box-shadow: 5px 5px 20px lightgrey;
+}
+
+#carrusel_propiedades_venta img {
+    width: 450px;
+    height: 300px;
+}
+
+#carrusel_propiedades_venta p {
+    margin: 20px;
+}
+
+#boton_alquiler_venta {
+    display: flex;
+    left: 70%;
+    width: 120px;
+    height: 50px;
+    margin: 10px;
+    box-shadow: none;
+    background-color: rgb(39, 97, 122);
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.5rem;
+    color: white;
+    text-decoration: none;
+}
+
+/* barra fija de navegación */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(146, 58, 58);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    z-index: 1000;
+}
+
+.logo img {
+    margin-top: 10px;
+    height: 80px;
+    width: 80px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+menu {
+    margin-left: auto;
+    margin-right: right;
+}
+
+/* Estilo del menú */
+.menu a {
+    text-decoration: none;
+    color: #ffffff;
+    margin-left: 20px;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.menu a:hover {
+    color: #646464;
+}
+
+.idiomas {
+    color: white;
+    margin-right: 50px;
+}
+
+.idiomas a {
+    color: white;
+    text-decoration: none;
+}
