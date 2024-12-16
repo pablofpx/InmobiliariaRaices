@@ -8,6 +8,9 @@ html {
     background-color: #f4f4f4;
 }
 
+main{
+    margin-bottom: 6em;
+}
 
 /* filtros */
 .filtros_contenedor {
@@ -15,7 +18,7 @@ html {
     margin: auto;
     padding: 20px;
     background-color: #f9f9f9;
-    border-radius: 8px;
+    border-radius: 4px;
     box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
     margin-top: 200px;
@@ -60,7 +63,7 @@ html {
     border: none;
     padding: 10px 15px;
     font-size: 1rem;
-    border-radius: 5px;
+    border-radius: 4px;
     cursor: pointer;
     transition: background-color 0.3s;
 }
@@ -91,7 +94,7 @@ html {
 
 .propiedad {
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
+    border-radius: 4px;
     overflow: hidden;
     background-color: #fff;
     transition: transform 0.2s;
@@ -137,7 +140,7 @@ html {
     color: white;
     text-decoration: none;
     padding: 8px 12px;
-    border-radius: 5px;
+    border-radius: 4px;
     text-align: center;
     font-size: 0.9rem;
     transition: background-color 0.3s;
