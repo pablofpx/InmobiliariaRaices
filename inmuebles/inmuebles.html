@@ -4,23 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <title>Inmuebles</title>
-    <link rel="stylesheet" href="inmuebles.css">
+    <link rel="stylesheet" href="styles_inmuebles.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/header.css">
 </head>
 
 <body>
-    <header>
-        <div></div>
-    </header>
     <nav class="navbar">
         <div class="logo">
-            <a href="inicio.html"><img src="img/Logo.png" width="200px" height="200px" alt="Logo"></a>
+            <a href="/index/index.html"><img src="/img/Logo.png" width="200px" height="200px" alt="Logo"></a>
         </div>
         <div class="menu">
             <a href="inmuebles.html" class="op1">Inmuebles</a>
-            <a href="promociones.html" class="op2">Promociones</a>
-            <a href="" class="op3">Empresa</a>
-            <a href="" class="op4">Generali Seguros</a>
-            <a href="contacto.html" class="op4">Contacto</a>
+            <a href="/promociones/promociones.html" class="op2">Promociones</a>
+            <a href="/empresa/empresa.html" class="op3">Empresa</a>
+            <a href="/contacto/contacto.html" class="op4">Contacto</a>
         </div>
         <div class="idiomas">
             <a href="">ES |</a>
@@ -71,7 +69,7 @@
             <div class="grid_propiedades">
                 <div class="propiedad">
                     <div class="imagen_propiedad">
-                        <img src="img/foto1.jpg" alt="Local Comercial">
+                        <img src="/img/foto1.jpg" alt="Local Comercial">
                     </div>
                     <div class="detalles_propiedad">
                         <p class="referencia">Ref. 1268</p>
@@ -86,7 +84,7 @@
 
                 <div class="propiedad">
                     <div class="imagen_propiedad">
-                        <img src="img/foto1.jpg" alt="Local Comercial">
+                        <img src="/img/foto1.jpg" alt="Local Comercial">
                     </div>
                     <div class="detalles_propiedad">
                         <p class="referencia">Ref. 1268 (2)</p>
@@ -101,7 +99,7 @@
 
                 <div class="propiedad">
                     <div class="imagen_propiedad">
-                        <img src="img/foto1.jpg" alt="Piso y Local">
+                        <img src="/img/foto1.jpg" alt="Piso y Local">
                     </div>
                     <div class="detalles_propiedad">
                         <p class="referencia">Ref. CAS_4278</p>
@@ -115,7 +113,7 @@
                 </div>
                 <div class="propiedad">
                     <div class="imagen_propiedad">
-                        <img src="img/foto1.jpg" alt="Local Comercial">
+                        <img src="/img/foto1.jpg" alt="Local Comercial">
                     </div>
                     <div class="detalles_propiedad">
                         <p class="referencia">Ref. 1268</p>
@@ -129,7 +127,7 @@
                 </div>
                 <div class="propiedad">
                     <div class="imagen_propiedad">
-                        <img src="img/foto1.jpg" alt="Local Comercial">
+                        <img src="/img/foto1.jpg" alt="Local Comercial">
                     </div>
                     <div class="detalles_propiedad">
                         <p class="referencia">Ref. 1268</p>
@@ -143,7 +141,7 @@
                 </div>
                 <div class="propiedad">
                     <div class="imagen_propiedad">
-                        <img src="img/foto1.jpg" alt="Local Comercial">
+                        <img src="/img/foto1.jpg" alt="Local Comercial">
                     </div>
                     <div class="detalles_propiedad">
                         <p class="referencia">Ref. 1268 (2)</p>
@@ -157,7 +155,7 @@
                 </div>
                 <div class="propiedad">
                     <div class="imagen_propiedad">
-                        <img src="img/foto1.jpg" alt="Local Comercial">
+                        <img src="/img/foto1.jpg" alt="Local Comercial">
                     </div>
                     <div class="detalles_propiedad">
                         <p class="referencia">Ref. 1268</p>
@@ -171,7 +169,7 @@
                 </div>
                 <div class="propiedad">
                     <div class="imagen_propiedad">
-                        <img src="img/foto1.jpg" alt="Piso y Local">
+                        <img src="/img/foto1.jpg" alt="Piso y Local">
                     </div>
                     <div class="detalles_propiedad">
                         <p class="referencia">Ref. CAS_4278</p>
@@ -185,7 +183,7 @@
                 </div>
                 <div class="propiedad">
                     <div class="imagen_propiedad">
-                        <img src="img/foto1.jpg" alt="Local Comercial">
+                        <img src="/img/foto1.jpg" alt="Local Comercial">
                     </div>
                     <div class="detalles_propiedad">
                         <p class="referencia">Ref. 1268</p>
@@ -202,21 +200,44 @@
     </main>
     <footer>
         <div class="footer">
-            <div id="logo">
-                <img src="img/foto2.jpg" alt="Logo">
+            <div class="footer_elementos">
+                <div id="logo">
+                    <img src="/img/Logo.png" alt="Logo">
+                </div>
+                <div id="contacts">
+                    <h2>Contactos</h2>
+                    <div id="contacts_body">
+                        <div>
+                            <img src="/img/icons8-location-64.png" alt="location" id="loc">
+                            <p>Rúa Sinfónica de Galicia, 10-24, 15004 A Coruña</p>
+                        </div>
+                        <div>
+                            <img src="/img/icons8-mail-96.png" alt="location" id="loc">
+                            <p>Correo: inmo@inmo.com</p>
+                        </div>
+                        <div>
+
+                            <img src="/img/icons8-phone-number-90.png" alt="location" id="loc">
+                            <p>Teléfono: 987 25 81 76</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div id="newsletter">
+                    <h2>Suscríbete a nuestro boletín</h2>
+                    <form action="newsletter.php" method="post">
+                        <input type="email" name="email" id="email" placeholder="Correo electrónico">
+                        <button type="submit">Suscribirse</button>
+                    </form>
+                </div>
+
+
+
             </div>
-            <div id="contacts">
-                <h1>Contactos</h1>
-                <p>Correo: inmo@inmo.com</p>
-                <p>Teléfono: 987 25 81 76</p>
+            <div id="footer_avisos">
+                Aviso Legal    |    Política de privacidad    |    Gestionar datos
             </div>
-            <div id="newsletter">
-                <h2>Suscríbete a nuestro boletín</h2>
-                <form action="newsletter.php" method="post">
-                    <input type="email" name="email" id="email" placeholder="Correo electrónico">
-                    <button type="submit">Suscribirse</button>
-                </form>
-            </div>
+
         </div>
     </footer>
 </body>

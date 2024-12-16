@@ -12,56 +12,6 @@ body {
     font-style: normal;
 }
 
-/* barra fija de navegación */
-.navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: rgb(146, 58, 58);
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    z-index: 1000;
-}
-
-.logo img {
-    margin-top: 10px;
-    height: 80px;
-    width: 80px;
-    margin-bottom: 10px;
-    margin-left: 10px;
-}
-
-menu {
-    margin-left: auto;
-    margin-right: right;
-}
-
-/* Estilo del menú */
-.menu a {
-    text-decoration: none;
-    color: #ffffff;
-    margin-left: 20px;
-    font-size: 16px;
-    transition: color 0.3s ease;
-}
-
-.menu a:hover {
-    color: #646464;
-}
-
-.idiomas {
-    color: white;
-    margin-right: 50px;
-}
-
-.idiomas a {
-    color: white;
-    text-decoration: none;
-}
 
 /* -----------------main----------------------------- */
 
@@ -71,7 +21,6 @@ menu {
     align-items: center;
     height: 60vh;
     margin-top: 120px;
-    /*border: 2px solid black;*/
 
 }
 
@@ -97,6 +46,18 @@ menu {
     opacity: 100%;
 }
 
+#slogan{
+    text-align: center;
+    position: relative;
+    top: 3em;
+    color: #444242;
+}
+
+#slogan>h2>span{
+    font-family: "Poppins", serif;
+    font-size: smaller;
+}
+
 /* carrusel de propiedades */
 .fotos_propiedades {
     display: flex;
@@ -107,7 +68,7 @@ menu {
     margin-right: 250px;
     margin-top: 200px;
 
-    transform: translateX(-100%);
+    transform: translateX(-50%);
     /* Start off-screen to the right */
     opacity: 0;
     transition: transform 2s ease-in, opacity 2s ease-in;
@@ -157,7 +118,7 @@ menu {
     justify-content: end;
     margin-right: 150px;
 
-    transform: translateX(100%);
+    transform: translateX(50%);
     /* Start off-screen to the right */
     opacity: 0;
     transition: transform 1.5s ease-out, opacity 1.5s ease-out;
@@ -245,7 +206,7 @@ menu {
     width: 100%;
 
     margin-left: 250px;
-    transform: translateX(100%);
+    transform: translateX(50%);
     /* Start off-screen to the right */
     opacity: 0;
     transition: transform 2s ease-in, opacity 2s ease-in;
@@ -286,7 +247,7 @@ menu {
     justify-content: start;
     margin-left: 150px;
 
-    transform: translateY(10%);
+    transform: translateX(-50%);
     /* Start off-screen to the right */
     opacity: 0;
     transition: transform 1.5s ease-in, opacity 1.5s ease-in;
@@ -294,7 +255,7 @@ menu {
 }
 
 .carrusel_container_venta.visible {
-    transform: translateY(0);
+    transform: translateX(0);
     /* Slide into view */
     opacity: 1;
 }
@@ -340,74 +301,53 @@ menu {
     text-decoration: none;
 }
 
-/* main footer */
-.footer {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    height: 30vh;
-    padding: 8rem;
-    border-top: 2px solid rgb(146, 58, 58);
-}
-
-.footer>div {
-    font-size: 1.5rem;
-    font-weight: bold;
-}
-
-/* logo */
-
-#logo {
-    display: flex;
-    justify-content: center;
-    align-items: start;
-    border-right: 1px solid #ccc;
-}
-
-#logo img {
-    width: 200px;
-}
-
-/*contactos */
-
-#contacts {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-right: 1px solid #ccc;
-}
-
-/* newsletter*/
-
-#newsletter {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-#newsletter form {
-    position: relative;
-    margin-top: 1em;
-    margin-right: 1.5em;
-}
-
-#newsletter button {
-    position: absolute;
-    top: 5px;
-    right: -30px;
-    background-color: rgb(199, 151, 31);
-    color: white;
-    padding: 0.8rem;
-    border: none;
-    cursor: pointer;
-}
-
-#newsletter button:hover {
-    background-color: #e0a800;
-    color: white;
-}
-
-#newsletter input {
+/* barra fija de navegación */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
-    padding: 1rem;
+    background-color: rgb(146, 58, 58);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    z-index: 1000;
+}
+
+.logo img {
+    margin-top: 10px;
+    height: 80px;
+    width: 80px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+menu {
+    margin-left: auto;
+    margin-right: right;
+}
+
+/* Estilo del menú */
+.menu a {
+    text-decoration: none;
+    color: #ffffff;
+    margin-left: 20px;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.menu a:hover {
+    color: #646464;
+}
+
+.idiomas {
+    color: white;
+    margin-right: 50px;
+}
+
+.idiomas a {
+    color: white;
+    text-decoration: none;
 }
