@@ -97,15 +97,12 @@ body {
     margin-top: 200px;
 
     transform: translateX(-50%);
-    /* Start off-screen to the right */
     opacity: 0;
     transition: transform 2s ease-in, opacity 2s ease-in;
-    /* Smooth slide-in */
 }
 
 .fotos_propiedades.visible {
     transform: translateX(0%);
-    /* Slide into view */
     opacity: 1;
 }
 
@@ -139,6 +136,7 @@ body {
     border-radius: 0.5rem;
     color: white;
     font-size: 1rem;
+    cursor: pointer;
 }
 
 .carrusel_container {
